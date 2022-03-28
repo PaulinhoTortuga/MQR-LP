@@ -1,0 +1,474 @@
+body
+    background-color: $bg_primary
+    .body_wrapper
+        background-image: url(/images/bg/desktop/services-circles-desktop.webp)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position-y: 42%
+    .main
+        background-image: url('/images/bg/desktop/main-circles-desktop.webp')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position-y: bottom
+        &_wrapper
+            max-width: 1290px
+            margin: 0 auto
+            padding: 31px 15px 110px 15px
+        .header 
+            display: flex
+            flex-direction: row
+            align-items: center
+            box-sizing: border-box
+            width: 100%
+            justify-content: space-between
+            transition: all 0.3s
+            &_logo
+                max-height: 47px
+            &_nav
+                ul
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    font-family: 'Poppins-Light'
+                    font-size: 18px
+                &_item
+                    position: relative
+                    display: inline-block
+                    margin-left: 40px
+                    color: $font-grey1
+                    text-align: center
+                    &::after
+                        position: absolute
+                        top: 30px
+                        right: 0
+                        width: 100%
+                        height: 2px
+                        display: block
+                        content: ''
+                        box-sizing: border-box
+                        border-bottom: 2px solid $font-grey1
+                        transform: scaleX(0)
+                        transition: transform 250ms ease-in-out
+                    &:hover
+                        &::after
+                            transform: scaleX(1)
+                            transform-origin: 0% 50%
+                &_btn
+                    padding: 12px 25px
+                    border: 1.5px solid #232323
+                    border-radius: 9px
+                    background-color: $btn_primary_default
+                    font-family: 'Poppins-Regular'
+                    font-size: 24px
+                    backdrop-filter: blur(62px)
+                    transition: all 0.5s
+                    +primary_btn_styling
+                    &::after
+                        content: ''
+                        padding-bottom: 0
+                        border-bottom: none
+        .header_scrolled
+            background-color: $bg_primary
+        &_content
+            display: flex
+            flex-direction: row
+            margin-top: 143px
+        &_text
+            max-width: 53%
+            font-family: 'Poppins-Regular'
+            h1
+                font-family: 'Spartan-Bold'
+                font-size: 58px
+                line-height: 120%
+                color: $font-primary
+                margin-bottom: 20px
+            &_subtitle
+                font-size: 24px
+                line-height: 150%
+                color: $font_grey1
+                max-width: 93%
+                margin-bottom: 10px
+            &_btn
+                display: inline-block
+                margin-top: 10px
+                padding: 23px 81px
+                border: 1px solid #B0D95A
+                border-radius: 9px
+                background-color: $btn_primary_default
+                font-size: 24px
+                color: $bg_secondary
+                transition: all 0.5s
+                +primary_btn_styling
+        &_blocks
+            display: flex
+            flex-direction: column
+            &_section
+                display: flex 
+                flex-direction: row
+                &_block
+                    padding: 61px 0
+                    width: 190px
+                    height: 246px
+                    box-sizing: border-box
+                    backdrop-filter: blur(57px)
+                    text-align: center
+                    border-radius: 9px
+                    margin-right: 30px
+                    &:nth-child(odd)
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 240, 102, 0.2) 100%)
+                        border: 1px solid rgba(224, 224, 224, 0.64)      
+                    &:nth-child(even)
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(201, 241, 115, 0.2) 100%)
+                        border: 1px solid rgba(219, 219, 219, 0.33)
+                    &:nth-child(2)
+                        margin-top: 101px
+                    &_header
+                        font-family: 'Poppins-Light'
+                        font-size: 20px
+                        color: $font-grey1
+                    &_subheader
+                        margin-top: 10px
+                        font-family: 'Poppins-Bold'
+                        font-size: 56px
+                        line-height: 84px
+                        color: $font_primary
+    .about  
+        padding: 0 38px 
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-image: url(/images/bg/desktop/about-circles-desktop.webp)
+            background-size: contain
+            background-repeat: no-repeat
+            width: 100%
+            min-height: 515px
+            bottom: 132px   
+            left: 0
+        &_container
+            background: url(/images/bg/desktop/about-bg-desktop.webp) no-repeat
+            background-size: cover
+            max-width: 100%
+            padding: 65px 15px
+            border-radius: 10px
+            background-color: $bg_secondary
+        &_wrapper
+            box-sizing: border-box
+            max-width: 1290px
+            margin: 0 auto
+        &_title
+            font-family: 'Spartan-Bold'
+            font-size: 53px
+            color: $font_white
+        &_subtitle
+            margin-top: 20px
+            font-family: 'Poppins-Light'
+            font-size: 20px
+            line-height: 30px
+            color: $font-white
+            max-width: 60%
+        &_reasons
+            margin-top: 50px
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            &_block
+                width: 300px
+                &_title
+                    position: relative
+                    font-family: 'Poppins-Regular'
+                    font-size: 32px
+                    line-height: 48px
+                    color: $font_white
+                    max-width: 91%
+                    &::after
+                        position: absolute
+                        content: ''
+                        background-color: #FCFF66
+                        width: 50%
+                        height: 1px
+                        top: 104px
+                        left: 0
+                        br
+                            display: none
+                &_subtitle
+                    margin-top: 40px
+                    font-family: 'Poppins-Light'
+                    font-size: 18px
+                    line-height: 27px
+                    color: $font_white
+    .services
+        &_wrapper
+            max-width: 1290px
+            margin: 0 auto
+            padding: 110px 15px 
+        &_title
+            font-family: 'Spartan-Bold'
+            font-size: 53px
+            color: $font_primary
+        &_blocks
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-around
+            &_block
+                margin-top: 50px
+                width: 410px
+                &_checkbox
+                    display: none
+                &_header
+                    font-family: 'Poppins-Regular'
+                    font-size: 28px
+                    line-height: 42px
+                    color: $font-grey2
+                    max-width: 81%
+                &_content
+                    margin-top: 20px
+                    &_text
+                        font-family: 'Poppins-Light'
+                        font-size: 18px
+                        line-height: 27px
+                        color: $font_grey1
+                        min-height: 162px
+                    &_btn
+                        display: inline-block
+                        margin-top: 28px
+                        padding: 18px 64px
+                        border: 1px solid $btn_secondary_default
+                        border-radius: 10px
+                        background-color: $btn_secondary_default
+                        font-family: 'Poppins-Regular'
+                        font-size: 16px
+                        color: $font_white
+                        transition: all 0.5s
+                        +primary_btn_styling
+    .cooperation
+        padding: 0 38px
+        &_container
+            max-width: 100%
+            padding: 65px 15px 73px 15px
+            border-radius: 10px
+            background-color: $bg_secondary 
+            overflow: hidden
+        &_wrapper
+            max-width: 1290px
+            margin: 0 auto 
+        &_title
+            font-family: 'Spartan-Bold'
+            font-size: 53px
+            color: $font_white
+        &_content
+            margin-top: 50px
+            display: flex
+            flex-direction: row
+            &_steps
+                &_step
+                    padding: 30px 43px
+                    background: rgba(255, 255, 255, 0.1)
+                    border-radius: 10px
+                    margin-bottom: 30px
+                    max-width: 630px
+                    margin-right: 30px
+                    box-sizing: border-box
+                    &:last-child
+                        background: none
+                        position: relative
+                        &::after
+                            content: ''
+                            background-image: url('/images/icons/cooperation-step5-desktop.svg')
+                            background-repeat: no-repeat
+                            position: absolute
+                            top: -20px
+                            right: 0
+                            width: 112%
+                            height: 120%
+                    &_header
+                        font-family: 'Poppins-Regular'
+                        font-size: 36px
+                        color: $font_white
+                    &_text
+                        margin-top: 19px
+                        font-family: 'Poppins-Light'
+                        font-size: 18px
+                        line-height: 27px
+                        color: $font_white
+    .faq
+        background-image: url('/images/bg/desktop/faq-circles-desktop.webp')
+        background-repeat: no-repeat
+        background-size: contain
+        background-position-y: 50%
+        &_wrapper
+            max-width: 1290px
+            margin: 0 auto
+            padding: 110px 15px
+        &_title
+            font-family: 'Spartan-Bold'
+            font-size: 53px
+            color: $font_primary
+        &_spoilers
+            margin-top: 60px
+            &_spoiler
+                position: relative
+                margin-bottom: 70px
+                &:last-child
+                    margin-bottom: 0
+                &_input
+                    position: absolute
+                    top: 0
+                    left: 0
+                    opacity: 0
+                    &:checked ~ .faq_spoilers_spoiler_header
+                        &::after
+                            background: url('/images/icons/minus.svg') no-repeat
+                            top: 30%
+                        ~ .faq_spoilers_spoiler_text
+                            display: block
+                &_header
+                    position: relative
+                    display: block
+                    font-family: 'Poppins-Regular'
+                    font-size: 36px
+                    color: $font_grey2
+                    cursor: pointer
+                    &::after
+                        content: ''
+                        position: absolute
+                        display: block
+                        box-sizing: border-box
+                        background: url('/images/icons/plus.svg') no-repeat
+                        width: 58px
+                        height: 58px
+                        top: -50%
+                        right: 0
+                        display: block
+                        transition: all 0.25s
+                &_text
+                    display: none
+                    margin-top: 30px
+                    font-family: 'Poppins-Light'
+                    font-size: 20px
+                    line-height: 160%
+    .contact
+        padding: 0 38px
+        padding-bottom: 152px
+        &_container
+            max-width: 100%
+            padding: 90px 15px 105px 15px
+            border-radius: 10px
+            background-color: $bg_secondary
+        &_wrapper
+            max-width: 1290px
+            margin: 0 auto
+        &_header
+            display: flex
+            flex-direction: row
+            &_title 
+                font-family: 'Spartan-Bold'
+                font-size: 53px
+                color: $font_white  
+                width: 49%
+                line-height: 120%
+                margin-right: 30px
+            &_subtitle
+                font-family: 'Poppins-Light'
+                font-size: 20px
+                width: 49%
+                line-height: 30px
+                color: $font_white
+        &_main
+            display: flex
+            flex-direction: row
+            margin-top: 30px
+        &_form
+            display: flex
+            flex-direction: column
+            max-width: 53%
+            margin-right: 30px
+            &_inputs
+                display: flex
+                align-items: flex-start
+                flex-wrap: wrap
+                justify-content: space-between
+                &_input
+                    box-sizing: border-box
+                    padding: 20px 20px
+                    min-width: 47%
+                    margin-bottom: 30px
+                    background: #4E4E4E
+                    border-radius: 5px
+                    border: none
+                    font-family: "Poppins-Light"
+                    font-size: 18px
+                    color: #BDBDBD
+                    &:nth-child(even)
+                        margin-right: 0
+                .textarea
+                    resize: none
+                    min-width: 100%
+                    min-height: 171px
+            &_checkpoint
+                position: relative
+                &_checkbox
+                    position: absolute
+                    top: 0
+                    left: 0
+                    opacity: 0
+                    &:checked ~ .contact_form_checkpoint_text
+                        &::before
+                            background-image: url(/images/icons/checkbox-checked.svg)         
+                &_text
+                    position: relative
+                    display: block
+                    font-family: 'Poppins-Regular'
+                    font-size: 16px
+                    color: $font_white
+                    cursor: pointer
+                    margin-left: 35px
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: -5px
+                        left: -35px
+                        width: 25px
+                        height: 25px
+                        background-image: url(/images/icons/checkbox-unchecked.svg)
+                        background-repeat: no-repeat
+                        transition: all 0.3s
+            &_btn   
+                margin-top: 30px
+                font-family: 'Poppins-Regular'
+                padding: 23px 81px
+                border: 1px solid #B0D95A
+                border-radius: 9px
+                background-color: $btn_primary_default
+                font-size: 24px
+                color: $bg_secondary
+                transition: all 0.5s
+                +primary_btn_styling
+        &_img
+            display: block
+            max-height: 442px
+            width: auto
+    .footer
+        background-color: $bg_secondary
+        &_wrapper
+            max-width: 1290px
+            margin: 0 auto
+            padding: 45px 15px
+        &_content
+            display: flex
+            flex-direction: row
+            margin-top: 40px
+            &_text
+                font-family: 'Poppins-Light'
+                font-size: 14px
+                line-height: 24px
+                color: $font_white
+                max-width: 49%
+            &_links
+                margin-left: 140px
+                &_link
+                    font-family: 'Poppins-Regular'
+                    font-size: 14px
+                    color: $font_white
+                    margin-right: 140px
