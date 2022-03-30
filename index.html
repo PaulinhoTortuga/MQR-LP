@@ -121,7 +121,11 @@
                             <p class="services_blocks_block_content_text">Since the invention of Bitcoin in 2009, over 16,000 virtual currencies
                                 have been introduced to the world. The popularity of digital money is growing at an unprecedented rate, so the
                                 attention of scammers is increasingly aimed at this niche.</p>
-                            <a href="#" class="services_blocks_block_content_btn">Free Consultation</a>
+                            <!-- for redirecting block names to 'victim' page -->
+                            <form method="POST" action="./victim.php">
+                                <input type="hidden" name="info" value="Bitcoin & Cryptocurrency Scam">
+                                <button type="submit" class="services_blocks_block_content_btn">Free Consultation</button>
+                            </form>
                         </div>
                     </div>
                     <div class="services_blocks_block">
@@ -130,7 +134,10 @@
                         <div class="services_blocks_block_content">
                             <p class="services_blocks_block_content_text">Forex trading scammers usually use classic methods like blocking the
                                 balance, deleting the account, inability to pass verification, and other tricks that lead to withdrawal issues.</p>
-                            <a href="#" class="services_blocks_block_content_btn">Free Consultation</a>
+                            <form method="POST" action="./victim.php">
+                                <input type="hidden" name="info" value="Forex Trading Scam">
+                                <button type="submit" class="services_blocks_block_content_btn">Free Consultation</button>
+                            </form>                        
                         </div>
                     </div>
                     <div class="services_blocks_block">
@@ -140,7 +147,10 @@
                             <p class="services_blocks_block_content_text">There is a misconception that binary options are one of the easiest ways
                                 to make a fortune with trading. However, the prohibition of binary options in many regions of the planet indicates
                                 that the truth is completely different.</p>
-                            <Free href="#" class="services_blocks_block_content_btn">Free Consultation</a>
+                            <form method="POST" action="./victim.php">
+                                <input type="hidden" name="info" value="Binary Options Scam">
+                                <button type="submit" class="services_blocks_block_content_btn">Free Consultation</button>
+                            </form>
                         </div>
                     </div>
                     <div class="services_blocks_block">
@@ -150,7 +160,10 @@
                             <p class="services_blocks_block_content_text">Contracts for difference have become quite popular since their inception
                                 in the 90s. However, since then, scammers have come up with dozens of sophisticated schemes to misappropriate your
                                 money by luring you with beautiful promises to get rich with CFDs</p>
-                            <a href="#" class="services_blocks_block_content_btn">Free Consultation</a>
+                            <form method="POST" action="./victim.php">
+                                <input type="hidden" name="info" value="Contracts for difference (CFD) Scam">
+                                <button type="submit" class="services_blocks_block_content_btn">Free Consultation</button>
+                            </form>
                         </div>
                     </div>
                     <div class="services_blocks_block">
@@ -160,7 +173,10 @@
                             <p class="services_blocks_block_content_text">These types of fraudulent activities can hit anyone, even if you know
                                 nothing about trading. With advances in technology, it has become easier to trick honest, unsuspecting citizens into
                                 deception even without participating in a devious scheme.</p>
-                            <a href="#" class="services_blocks_block_content_btn">Free Consultation</a>
+                            <form method="POST" action="./victim.php">
+                                <input type="hidden" name="info" value="Credit Card & Online Banking Scams">
+                                <button type="submit" class="services_blocks_block_content_btn">Free Consultation</button>
+                            </form>
                         </div>
                     </div>
                     <div class="services_blocks_block">
@@ -170,7 +186,10 @@
                             <p class="services_blocks_block_content_text">Rather silly scammers usually use truly shameless scams aimed at
                                 interacting with emotions, feelings, and experiences. Nevertheless, romantic "extortion" statistics continue to grow
                                 and surprise with high rates every year.</p>
-                            <a href="#" class="services_blocks_block_content_btn">Free Consultation</a>
+                            <form method="POST" action="./victim.php">
+                                <input type="hidden" name="info" value="Online Romance Scam">
+                                <button type="submit" class="services_blocks_block_content_btn">Free Consultation</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -292,7 +311,7 @@
                         </p>
                     </div>
                     <div class="contact_main">
-                        <div class="contact_form">
+                        <form class="contact_form" action="thanks.html">
                             <div class="contact_form_inputs">
                                 <input type="text" placeholder="Full Name" name="fullName" class="contact_form_inputs_input" required>
                                 <input type="email" placeholder="E-mail" class="contact_form_inputs_input" required>
@@ -313,7 +332,7 @@
                                 <label for="checkbox" class="contact_form_checkpoint_text">I agree to receive mails from the MyQuickRefund company</label>
                             </div>
                             <button type="submit" href="#" class="contact_form_btn fbtns">Submit</button>
-                        </div>
+                        </form>
                         <picture>
                             <source srcset="/images/img/desktop/contact-img-desktop.webp" media="(min-width: 1025px)">
                             <source srcset="/images/img/tablet/contact-img-tablet.webp" media="(max-width: 1024px) and (min-width: 769px)">
@@ -334,13 +353,13 @@
                         service selected. My Quick Refund does not offer any financial investments or advice.
                     </p>
                     <div class="footer_content_links">
-                        <a href="#" class="footer_content_links_link">Terms & Conditions </a>
-                        <a href="#" class="footer_content_links_link">Privacy Policy</a>
+                        <a href="terms.html" class="footer_content_links_link">Terms & Conditions </a>
+                        <a href="privacy.html" class="footer_content_links_link">Privacy Policy</a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-<script src="index.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>

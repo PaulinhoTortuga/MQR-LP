@@ -55,12 +55,12 @@
                         </div>
                         <div class="main_content_section2">
                             <span class="main_content_section2_subtitle">
-                                File a claim for compensation from <span id="data2">Bitcoin & Cryptocurrency Scam!</span> 
+                                File a claim for compensation from <span><?= $_POST['info']; ?></span> 
                             </span>
                             <h1 class="main_content_section2_title">
                                 DON'T LET SCAMMERS TAKE POSSESSION OF YOUR MONEY!
                             </h1>
-                            <div class="main_form">
+                            <form class="main_form" action='thanks.html'>
                                 <div class="main_form_inputs">
                                     <input type="text" placeholder="Full Name" name="fullName" class="main_form_inputs_input" required>
                                     <input type="email" placeholder="E-mail" class="main_form_inputs_input" required>
@@ -81,7 +81,7 @@
                                     <label for="checkbox" class="main_form_checkpoint_text">I agree to receive mails from the MyQuickRefund company</label>
                                 </div>
                                 <button type="submit" href="#" class="main_form_btn fbtns">Send</button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -96,14 +96,14 @@
                             service selected. My Quick Refund does not offer any financial investments or advice.
                         </p>
                         <div class="footer_content_links">
-                            <a href="#" class="footer_content_links_link">Terms & Conditions </a>
-                            <a href="#" class="footer_content_links_link">Privacy Policy</a>
+                            <a href="terms.html" class="footer_content_links_link">Terms & Conditions </a>
+                            <a href="privacy.html" class="footer_content_links_link">Privacy Policy</a>
                         </div>
                     </div>
                 </div>
             </footer>        
         </div>
     </div>
-<script src="victim.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>
