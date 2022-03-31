@@ -1,0 +1,121 @@
+@media (max-width: 1024px)
+    body
+        .main
+            background-image: url('/assets/images/bg/tablet/main-circles-tablet.webp')
+            background-size: cover
+            &_wrapper
+                max-width: 768px
+                padding: 115px 32px 79px 32px
+            .header
+                position: fixed
+                top: 0
+                left: 0
+                height: 75px
+                z-index: 1
+                &_logo
+                    position: absolute
+                    top: 15px
+                    left: 32px
+                    z-index: 2
+                &_nav
+                    display: flex
+                    flex-direction: column
+                    margin: 0
+                    position: fixed
+                    top: -100%
+                    height: 488px
+                    right: 0
+                    left: 0
+                    transition: 0.6s all
+                    background: $bg_primary
+                    ul
+                        margin-top: 112px
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        font-size: 18px
+                    &_item
+                        margin: 0
+                        margin-bottom: 40px
+                .active
+                    top: 0
+                .burger_btn
+                    display: block
+                    position: absolute
+                    right: 32px
+                    top: 30px
+                    width: 47px
+                    span
+                        display: block
+                        height: 3px
+                        margin-bottom: 10px
+                        background-color: #000000
+                        transition: 0.5s all
+                    &_active
+                        span
+                            margin-bottom: -2px
+                            &:first-child
+                                transform: rotate(-45deg)
+                            &:nth-child(2)
+                                display: none
+                            &:nth-child(3)
+                                transform: rotate(45deg)
+            &_content
+                h1
+                    font-size: 64px
+        .footer
+            &_wrapper
+                max-width: 768px
+                padding: 20px 32px 30px 32px
+            &_content   
+                margin-top: 30px
+                flex-direction: column
+                &_text
+                    max-width: 100%
+                &_links
+                    margin-left: 0
+                    margin-top: 30px
+                    &_link
+                        margin-right: 87px 
+@media (max-width: 425px)
+    body
+        .main
+            background-image: url('/assets/images/bg/mobile/main-circles-mobile.webp')
+            &_wrapper
+                max-width: 343px
+                padding: 89px 16px 79px 16px
+            .header
+                height: 59px
+                background-color: $bg_primary
+                &_logo
+                    top: 7px    
+                    left: 16px
+                    max-height: 45px
+                .burger_btn
+                    top: 20px
+                    right: 16px
+            &_content
+                h1
+                    font-size: 46px    
+                &_subtitle
+                    font-size: 18px
+        .footer
+            &_wrapper
+                max-width: 343px
+                padding: 30px 16px
+            &_content   
+                margin-top: 30px
+                flex-direction: column
+                &_text
+                    max-width: 100%
+                &_links
+                    margin-left: 0
+                    margin-top: 30px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    &_link
+                        margin-right: 0
+
+
+                
